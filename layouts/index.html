@@ -5,11 +5,12 @@
   
   <div class="row">
     <div class="col-md-9">
-      {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
-      {{ range $paginator.Pages }}
-      <h2>{{ .Title }}</h2>
+      {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}{{ range $paginator.Pages }}
+      <article>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <div>{{ .Summary }}</div>
+      </article>
       {{ end }}
-
       {{ partial "pagination.html" . }}
     </div>
 
