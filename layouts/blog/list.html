@@ -1,18 +1,11 @@
 {{ partial "header-first.html" . }}
 {{ partial "header-after.html" . }}
 
-<section class="hero">
-  <div class="container">
-    <h1>Blog posts done by me.</h1>
-    <p>This is an explaination of the blog and how it works.</p>
-  </div>
-</section>
-
 <div class="container">
   <div class="row">
     <div class="col-md-9">
 
-      <h1 class="p-page-title">BACON</h1>
+      <h1 class="p-page-title">{{ .Title }} - Bacon</h1>
 
       <div class="row">
         {{ range (.Paginate .Data.Pages).Pages }}
@@ -35,4 +28,3 @@
 </div>
 
 {{ partial "footer.html" . }}
-

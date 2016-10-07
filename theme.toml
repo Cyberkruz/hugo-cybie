@@ -19,8 +19,5 @@ min_version = 0.15
   name = ""
   homepage = ""
   repo = ""
-
-[Permalinks]
-  blog = "/blog/:year/:month/:day/:slug/"
   
 PygmentsCodeFences = true
