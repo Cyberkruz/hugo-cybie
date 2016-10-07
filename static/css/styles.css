@@ -1,0 +1,14 @@
+.navbar-default {
+  background: #fff;
+}
+
+.navbar-brand {
+  padding: 20px 20px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+}
